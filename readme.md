@@ -209,7 +209,7 @@ resource "aws_instance" "os1" {
 ```
 ### Step 5
 Now we want When it recognize the person 1 face it will Create EC2 instance in the AWS using CLI.
-
+Here the model will recognize the person 2 when the confidence is greater than or equal to 85.
 ```
 import cv2
 import os
@@ -243,7 +243,7 @@ while True:
 
         cv2.putText(photo, display_string, (100, 120), cv2.FONT_HERSHEY_COMPLEX, 1, (255,120,150), 2)
 
-        if confidence > 85:
+        if confidence >= 85:
             cv2.putText(photo, "Hey Gaurav ", (250, 450), cv2.FONT_HERSHEY_COMPLEX, 1, (0,255,0), 2)
             cv2.imshow('Face Recognition - Gaurav', photo )
             run_terraform = True
@@ -275,6 +275,7 @@ cap.release()
 
 ### Step 6
 Now we want When it recognize the person 2 face it will send mail to your mail id by writing this is face of your_name. Second it send whatsapp message to your friend, it can be anything.
+Here the model will recognize the person 2 when the confidence is greater than or equal to 85.
 
 ```
 import cv2
@@ -308,7 +309,7 @@ while True:
 
         cv2.putText(photo, display_string, (100, 120), cv2.FONT_HERSHEY_COMPLEX, 1, (255,120,150), 2)
 
-        if confidence > 85:
+        if confidence >= 85:
             cv2.putText(photo, "Hey Omkar", (250, 450), cv2.FONT_HERSHEY_COMPLEX, 1, (0,255,0), 2)
             cv2.imshow('Face Recognition - Omkar', photo )
             run_email=True
