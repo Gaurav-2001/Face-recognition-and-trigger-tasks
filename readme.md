@@ -1,4 +1,4 @@
-## ***Using Face Recognition to send a mail*** 📧***, WhatsApp*** 📲 ***and launching AWS instance*** 💻
+## ***Using Face Recognition to send a mail*** 📧 ***, WhatsApp*** 📲 ***and launching AWS instance*** 💻
 
 ![front](./Screenshots/front.jpg)
 > ***So In this task we are using the Face Recognition model to recognize someone's Face and after that we will ask the model to send a WhatsApp message to some friend's number, email to someone. for making this task more interesting we will Create one more model to recognize another person face. after there face is recognize we will ask the model to launch AWS ec2 instance via a terraform code.***
@@ -274,7 +274,7 @@ cap.release()
 ![g_model](./Screenshots/g_run2.jpg)
 
 ### Step 6
-Now we want When it recognize the person 2 face it will send mail to your mail id by writing this is face of your_name. Second it send whatsapp message to your friend, it can be anything.
+Now we want When it recognize the person 2 face it will send mail to your mail id by writing message "This is face of ". Second it send whatsapp message to your friend, it can be anything.
 Here the model will recognize the person 2 when the confidence is greater than or equal to 85.
 
 ```
