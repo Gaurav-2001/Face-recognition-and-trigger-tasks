@@ -29,7 +29,7 @@ resource "aws_security_group" "allow_http_ssh" {
   }
 
   tags = {
-    Name = "allow_80_n_22_n_2049"
+    Name = "allow_80_n_22"
   }
 }
 
